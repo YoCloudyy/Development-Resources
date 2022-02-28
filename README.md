@@ -77,22 +77,25 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- F
-
-- _Filebeat watches for log files/locations and collect log events. (Filebeat: Lightweight Log Analysis & Elasticsearch)
-Metricbeat records metrics and statistical data from the operating system and from services running on the server (Metricbeat: Lightweight Shipper for Metrics)
+- Filebeat monitors the log directories or files and forwards them either to Elasticsearch or Logstash
+- Metricbeat collects metrics and statistics on the system such as cpu usage
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the configuration file to Ansible container.
+
+- Update the hosts file in /etc/ansible to include the IP address of the Elk server and Webservers
+
+- Run the playbook, and navigate to ELK-Server-PublicIP:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to mjake Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- [ElkInstall.yml](https://github.com/YoCloudyy/Development-Resources/blob/ac10add1ce742add2e85f95c1e12ced6e52c8a50/Ansible/Playbooks/install-elk.yml) -This is the playbook used to install the Elk server
+- [filebeat.yml](https://github.com/YoCloudyy/Development-Resources/blob/b19d439001e432ba49255e366995216e82cf187f/Ansible/Playbooks/filebeat-playbook.yml) - This is the playbook to install and Configure filebeat
+  -  [Metricbeat.yml](https://github.com/YoCloudyy/Development-Resources/blob/b19d439001e432ba49255e366995216e82cf187f/Ansible/Playbooks/metricbeat-playbook.yml) - This is the playbook to Install and configure Metricbeat.yml
+- Copy these playbooks into /etc/ansible directory
+- _Which file do you update to mjake Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ updating the hosts files to determine the ip of the elk/web servers that the container is going to be installed on
 - _Which URL do you navigate to in order to check that the ELK server is running?
+ELK-Server-PublicIP:5601/app/kibana
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
