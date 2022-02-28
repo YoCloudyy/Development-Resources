@@ -28,28 +28,29 @@ The configuration details of each machine may be found below.
 
 | Name        | Function   | IP Address | Operating System |
 |-------------|------------|------------|------------------|
-| Jump Box    |  Gateway   | 10.0.0.8   | Linux            |
-| Web 1       | Webserver  | 10.0.0.9   | Linux            |
-| Web 2       | Webserver  | 10.0.0.11  | Linux            |
-| Elk-server  | elk stack  | 10.1.0.4   | Linux            |
+| Jump Box    |  Gateway   | 10.0.0.8   | Linux (Ubuntu)   |
+| Web 1       | Webserver  | 10.0.0.9   | Linux (Ubuntu)   |
+| Web 2       | Webserver  | 10.0.0.11  | Linux (Ubuntu)   |
+| Elk-server  | elk stack  | 10.1.0.4   | Linux (Ubuntu)   |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump box Machine Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- Personal IP address
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by SSH connection.
+- The Elk Stack can only be connect by the Jumpbox machine via SSH and through web access through Personal IP
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name       | Publicly Accessible | Allowed IP Addresses               
+|------------|---------------------|------------------------------------|
+| Jump Box   | Yes                 | Personal IP - SSH                  |
+| Elk Stack  | No                  | Personal -port 5601 / Jumpbox -SSH |
+|  Web 1     | Yes Through LB      | Jump box -SSH                      |
+|  Web 2     | Yes Through LB      | Jump box -SSH                      |
 
 ### Elk Configuration
 
