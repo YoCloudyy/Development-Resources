@@ -65,7 +65,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![Dockerps]([https://github.com/YoCloudyy/Development-Resources/blob/dcd8eb5cdb2cba165f7637977cc6018d67bca696/Ansible/Images/elk761.png)
+![Dockerps]([https://github.com/YoCloudyy/Development-Resources/blob/fc908c37da888c17e9c7336c017fd77bebc25e8c/Ansible/Images/elk761.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
