@@ -6,15 +6,11 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - [Playbook.yml](https://github.com/YoCloudyy/Development-Resources/blob/ac10add1ce742add2e85f95c1e12ced6e52c8a50/Ansible/Playbooks/playbook.yml)
+  - [Playbook.yml](https://github.com/YoCloudyy/Development-Resources/blob/ac10add1ce742add2e85f95c1e12ced6e52c8a50/Ansible/Playbooks/playbook.yml) - Install DVWA Servers
+  - [ElkInstall.yml](https://github.com/YoCloudyy/Development-Resources/blob/ac10add1ce742add2e85f95c1e12ced6e52c8a50/Ansible/Playbooks/install-elk.yml) -Install Elk stack
+  - [filebeat.yml](https://github.com/YoCloudyy/Development-Resources/blob/b19d439001e432ba49255e366995216e82cf187f/Ansible/Playbooks/filebeat-playbook.yml) - install and Configure filebeat
+  -  [Metricbeat.yml](https://github.com/YoCloudyy/Development-Resources/blob/b19d439001e432ba49255e366995216e82cf187f/Ansible/Playbooks/metricbeat-playbook.yml) - Install and configure Metricbeat.yml
 
-This document contains the following details:
-- Description of the Topologu
-- Access Policies
-- ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
 
 
 ### Description of the Topology
