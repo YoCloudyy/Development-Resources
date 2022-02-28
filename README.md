@@ -2,9 +2,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-git https://github.com/YoCloudyy/Development-Resources/blob/adcdc1b4a56c968f96f9246d98ed21a3322ab9aa/Diagrams/Cloud%20Network%20Diagram.PNG Cloud Network Diagram
+![Cloud Network Diagram](https://github.com/YoCloudyy/Development-Resources/blob/main/Diagrams/Cloud%20Network%20Diagram.PNG?raw=true)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
